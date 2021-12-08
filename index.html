@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title" class="format-text">ETF Survey Form</h1>
+    <p id="description" class="format-text">Thankyou for purchasing our album, Please give your feedback for us</p>
+
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Please enter your name." required>
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Please enter your mail." required>
+        </label>
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="Please enter your Age." min="17" max="99" required>
+        </label>
+        <label for="dropdown" id="dropdown-label">
+            Who is your favorite member ?
+            <select id="dropdown">
+                <option value="">Select Member</option>
+                <option value="">Craig Mabbitt</option>
+                <option value="">Robert Ortiz</option>
+                <option value="">Thomas Bell</option>
+                <option value="">Kevin Gruft</option>
+            </select>
+        </label>
+
+        <fieldset id="radio">
+            <legend>What your favorite discography ?</legend>
+            <div class="discography">
+                <input id="radio" type="radio" id="html" name="fav_language" value="HTML" /> Dying Is Your Latest Fashion (2006)<br>
+                <input id="radio" type="radio" id="html" name="fav_language" value="HTML" /> This War Is Ours (2008)
+                <br>
+                <input id="radio" type="radio" id="html" name="fav_language" value="HTML" /> Escape the Fate (2010)
+                <br>
+                <input id="radio" type="radio" id="html" name="fav_language" value="HTML" /> Ungrateful (2013)<br>
+                <input id="radio" type="radio" id="html" name="fav_language" value="HTML" /> Hate Me (2015)<br>
+                <input id="radio" type="radio" id="html" name="fav_language" value="HTML" /> I Am Human (2018)<br>
+                <input id="radio" type="radio" id="html" name="fav_language" value="HTML" /> Chemical Warfare (2021)
+            </div>
+        </fieldset>
+
+        <fieldset id="checkbox">
+            <legend>What discography your have ?</legend>
+            <div class="discography-cb">
+                <input type="checkbox" id="discography_purchase" name="discography_purchase" value="2006">
+                <label for="vehicle1"> Dying Is Your Latest Fashion</label>
+                <input type="checkbox" id="discography_purchase" name="discography_purchase" value="2008">
+                <label for="vehicle1"> This War Is Ours</label>
+                <input type="checkbox" id="discography_purchase" name="discography_purchase" value="2010">
+                <label for="vehicle1"> Escape the Fate</label>
+                <input type="checkbox" id="discography_purchase" name="discography_purchase" value="2013">
+                <label for="vehicle1"> Ungrateful</label>
+                <input type="checkbox" id="discography_purchase" name="discography_purchase" value="2015">
+                <label for="vehicle1"> Hate Me</label>
+                <input type="checkbox" id="discography_purchase" name="discography_purchase" value="2018">
+                <label for="vehicle1"> I Am Human</label>
+                <input type="checkbox" id="discography_purchase" name="discography_purchase" value="2021">
+                <label for="vehicle1"> Chemical Warfare</label>
+            </div>
+        </fieldset>
+        <label for="email" id="email-label">
+            Feedback
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
